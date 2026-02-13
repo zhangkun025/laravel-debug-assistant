@@ -1,0 +1,52 @@
+{
+    "name": "presenso/laravel-debug-assistant",
+    "description": "A powerful Laravel debugging assistant with comprehensive diagnostic and fix tools",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "debug",
+        "diagnostic",
+        "troubleshooting",
+        "assistant"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Presenso",
+            "email": "support@presenso.app"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Presenso\\DebugAssistant\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Presenso\\DebugAssistant\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Presenso\\DebugAssistant\\DebugAssistantServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
